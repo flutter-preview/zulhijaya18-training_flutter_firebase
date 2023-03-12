@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "712496579765",
+    "firebase_url": "https://training-flutter-firebase-default-rtdb.firebaseio.com",
+    "project_id": "training-flutter-firebase",
+    "storage_bucket": "training-flutter-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712496579765:android:f11d7a38894f48149aeafc",
+        "android_client_info": {
+          "package_name": "com.example.training_flutter_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712496579765-1p5e0v6jvpjc7l3rfo7fj3qd3p8t8dqq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgDveGN5WuqabEJx6sKlWxgqWrL5ra6hs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712496579765-1p5e0v6jvpjc7l3rfo7fj3qd3p8t8dqq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "712496579765-4fv7g57bp4f40oelia6mq5nip5p21rfb.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.trainingFlutterFirebase"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
