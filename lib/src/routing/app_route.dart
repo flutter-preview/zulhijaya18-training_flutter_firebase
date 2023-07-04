@@ -1,42 +1,37 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:training_flutter_firebase/src/features/about/presentation/about_screen.dart';
 import 'package:training_flutter_firebase/src/features/home/presentation/home_screen.dart';
-import 'package:training_flutter_firebase/src/service/navigation_service.dart';
+import 'package:training_flutter_firebase/src/features/profile/presentation/profile_screen.dart';
 
-enum AppRoute {
-  home,
-  about,
+class AppRoute {
+  static String home = 'home', about = 'about', profile = 'profile';
 }
 
 final List<GoRoute> routes = [
   GoRoute(
-    name: AppRoute.home.name,
+    name: AppRoute.home,
     path: '/',
     builder: (context, state) => const HomeScreen(),
     routes: [
       GoRoute(
-        name: AppRoute.about.name,
+        name: AppRoute.about,
         path: 'about',
         builder: (context, state) => const AboutScreen(),
+      ),
+      GoRoute(
+        name: AppRoute.profile,
+        path: 'profile',
+        builder: (context, state) => const ProfileScreen(),
       ),
     ],
   ),
 ];
 
 final routesProvider = Provider((ref) {
-  final navRoute = NavigationService();
   return GoRouter(
     routes: routes,
     initialLocation: '/',
-    refreshListenable: navRoute,
-    redirect: (context, state) {
-      if (navRoute.route == 'about') {
-        return '/about';
-      } else {
-        return null;
-      }
-    },
+    redirect: (context, state) {},
   );
 });

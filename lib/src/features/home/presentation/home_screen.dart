@@ -26,9 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
               Consumer(builder: (context, ref, _) {
                 return TextButton(
                   onPressed: () {
-                    context.goNamed(AppRoute.about.name);
-                    // ref.read(navigationRouteProvider).update('about');
-                    // NavigationService().update('about');
+                    context.goNamed(AppRoute.about);
                   },
                   child: const Text('Go To About Screen'),
                 );
